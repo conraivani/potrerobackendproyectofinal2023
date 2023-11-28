@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Potrero</title>
+</head>
+<body>
+    <h1>Tienda Potrero</h1>
+    <button type="submit"><a href="index.php">Inicio</a></button>
+    <button type="submit"><a href="listar.php">Listar instrumentos</a></button>
+    <button type="submit"><a href="agregar.html">Agregar instrumentos</a></button>
+    <h2>Agregar instrumento
+    </h2>
+    <p>Ingrese los datos del instrumento.</p>
+
+
+    <form method="POST" action="agregar.php" enctype="multipart/form-data">
+        <label>Tipo de instrumento</label>
+        <input type="text" name="instrumento" placeholder="Instrumento" required>
+        <label>Marca</label>
+        <input type="text" name="marca" placeholder="Marca" required>
+        <label>Decripcion</label>
+        <input type="text" name="descripcion" placeholder="Descripcion" required>
+        <label>Precio</label>
+        <input type="text" name="precio" placeholder="Precio" required>
+        <label>Imagen</label>
+        <input type="file" name="imagen" placeholder="Imagen">
+        <label>Pago</label>
+        <input type="text" name="pago" placeholder="Pago" required>
+        <input type="submit" name="submit" value="Ingresar">
+    </form>
+
+
+</body>
+</html>
